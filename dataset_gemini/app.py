@@ -2,15 +2,6 @@ import os
 import pandas as pd
 import streamlit as st
 import subprocess
-
-
-
-def install_package(package_name):
-
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', package_name]) 
-
-install_package("google-generativeai")
-
 import google.generativeai as genai
 
 # Streamlit app title
